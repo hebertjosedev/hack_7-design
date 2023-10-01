@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Open sans extrabold';
+    src: url('fonts/Open_Sans/static/OpenSans-ExtraBold.ttf');
+}
+
+@font-face {
+    font-family: 'Open sans semibold';
+    src: url('fonts/Open_Sans/static/OpenSans-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Open sans bold';
+    src: url('fonts/Open_Sans/static/OpenSans-Bold.ttf');
+}
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#FFF8EE;
+}
+
+header{
+    position: relative;
+}
+
+header .circulo-1,
+header .circulo-2,
+main .circulo-3{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+header .circulo-1{
+    left: 28%;
+    shape-outside: circle(50% at 30%);
+    clip-path: circle(50% at 0%);
+    transform: rotate(90deg);
+    background: #FFD900;
+}
+
+header .circulo-2{
+    top: 33%;
+    right: 0;
+    shape-outside: circle(50% at 0%);
+    clip-path: circle(50% at 0%);
+    transform: rotate(180deg);
+    background: #FF5757;
+}
+
+main .circulo-3{
+    left: 18%;
+    bottom: 0;
+    shape-outside: circle(50% at 0%);
+    clip-path: circle(50% at 0%);
+    transform: rotate(270deg);
+    background: #FFC1D3;
+}
+
+header .perfil{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 46px;
+}
+
+header .perfil h1,
+header .perfil h2{
+    font-family: 'Open sans extrabold';
+    font-size: 80px;
+    line-height: 68px;
+}
+
+header .perfil h5{
+    font-size: 'Open sans bold';
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 23px;
+}
+
+header .perfil-foto img{
+    width: 250px;
+}
+
+header .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+header .menu nav{
+    background-color: #FFC1D3;
+    border: none;
+    border-radius: 37px;
+    width: 846px;
+}
+
+header .menu ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    overflow: hidden;
+}
+
+header .menu li{
+    width: 90px;
+    font-family: 'Open sans extrabold';
+    font-size: 25px;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+header .menu li a{
+    display: block;
+    font-family: 'Open sans semibold';
+    font-weight: 100;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 750px;
+    font-family: 'Open sans semibold';
+}
+
+main img{
+    width: 300px;
+}
+
+main .contenedor-about,
+main .contenedor-services,
+main .contenedor-imagenes,
+main .contenedor-footer{
+    display: flex;
+    gap: 87px;
+    font-size: 13px;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+}
+
+main section p,
+main section ul{
+    line-height: 22px;
+}
+
+main .contenedor-about h2,
+main .contenedor-footer h2{
+    font-family: 'Open sans extrabold';
+    margin-bottom: 20px;
+}
+
+main .contenedor-about ul{
+   display: flex;
+   /* justify-content: space-around; */
+   justify-content: space-between;
+   list-style: none;
+}
+
+main .contenedor-services ul:nth-child(1){
+    list-style: none;
+}
+
+main .contenedor-services ul:nth-child(1){
+    font-family: 'open sans semibold';
+    width: 300px;
+    background-color: #85E0E4;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+main .contenedor-footer ul:nth-child(2){
+    display: flex;
+    justify-content: space-around;
+    width: 307px;
+    padding: 0 10px 0 10px;
+    font-size: 13px;
+}
